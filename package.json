@@ -4,9 +4,9 @@
   "description": "",
   "main": "./dist/index.js",
   "scripts": {
-    "build": "tsc **/*.ts --declaration --outDir dist",
+    "build": "tsc index.ts --declaration --outDir dist",
     "format": "prettier **/*.ts --write",
-    "test": "npm run build && tape ./dist/**/_test.js"
+    "test": "npm run build && tsc tests/*.ts && tape tests/*.js"
   },
   "repository": {
     "type": "git",

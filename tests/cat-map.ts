@@ -1,5 +1,5 @@
 import { test } from "tape";
-import catMap from "./index";
+import { catMap } from "../dist/index";
 
 test("catMap", (t) => {
   t.equal(

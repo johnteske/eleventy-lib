@@ -1,5 +1,5 @@
 import { test } from "tape";
-import maybe from "./index";
+import { maybe } from "../dist/index";
 
 test("maybe", (t) => {
   t.throws(() => maybe());
