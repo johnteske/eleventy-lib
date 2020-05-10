@@ -1,0 +1,23 @@
+{
+  "name": "eleventy-lib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnteske/eleventy-lib.git"
+  },
+  "author": "John Teske",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnteske/eleventy-lib/issues"
+  },
+  "homepage": "https://github.com/johnteske/eleventy-lib#readme",
+  "devDependencies": {
+    "prettier": "^2.0.5",
+    "tape": "^5.0.0"
+  }
+}
