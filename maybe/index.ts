@@ -9,6 +9,11 @@ export default (...args) => {
     return content != null ? content : "";
   }
 
-  const [fn, content] = args;
-  return content != null ? fn(content) : "";
+  if (typeof args[0] === "function") {
+    const [fn, content] = args;
+    return content != null ? fn(content) : "";
+  }
+
+  const [template, content] = args;
+  return content != null ? template : "";
 };

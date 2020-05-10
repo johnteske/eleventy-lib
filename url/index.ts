@@ -1,7 +1,12 @@
-const withBaseUrl = (site, url: string) =>
+interface Site {
+  baseUrl: string;
+}
+
+const withBaseUrl = (site: Site, url: string) =>
   `/${site.baseUrl}/${url}`.replace(/\/+/g, "/");
 
-const withAssetUrl = (site, url: string) => withBaseUrl(site, site.assetsUrl + url);
+const withAssetUrl = (site: Site, url: string) =>
+  withBaseUrl(site, "assets" + url);
 
 export default {
   withBaseUrl,

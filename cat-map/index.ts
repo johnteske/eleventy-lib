@@ -1,1 +1,1 @@
-const catMap = (fn, arr: any[]) => arr.map(fn).join("");
+export default <T>(fn: (T) => any, arr: T[]) => arr.map(fn).join("");

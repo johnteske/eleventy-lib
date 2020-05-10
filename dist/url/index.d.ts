@@ -1,5 +1,8 @@
+interface Site {
+    baseUrl: string;
+}
 declare const _default: {
-    withBaseUrl: (site: any, url: string) => string;
-    withAssetUrl: (site: any, url: string) => string;
+    withBaseUrl: (site: Site, url: string) => string;
+    withAssetUrl: (site: Site, url: string) => string;
 };
 export default _default;

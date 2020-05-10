@@ -13,6 +13,10 @@ exports["default"] = (function () {
         var content_1 = args[0];
         return content_1 != null ? content_1 : "";
     }
-    var fn = args[0], content = args[1];
-    return content != null ? fn(content) : "";
+    if (typeof args[0] === "function") {
+        var fn = args[0], content_2 = args[1];
+        return content_2 != null ? fn(content_2) : "";
+    }
+    var template = args[0], content = args[1];
+    return content != null ? template : "";
 });

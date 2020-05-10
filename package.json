@@ -5,6 +5,7 @@
   "main": "./dist/index.js",
   "scripts": {
     "build": "tsc **/*.ts --declaration --outDir dist",
+    "format": "prettier **/*.ts --write",
     "test": "npm run build && tape ./dist/**/_test.js"
   },
   "repository": {
