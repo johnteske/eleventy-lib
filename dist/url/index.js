@@ -1,12 +1,12 @@
 "use strict";
 exports.__esModule = true;
-var withBaseUrl = function (site, url) {
-    return ("/" + site.baseUrl + "/" + url).replace(/\/+/g, "/");
+var base = function (baseUrl, url) {
+    return ("/" + baseUrl + "/" + url).replace(/\/+/g, "/");
 };
-var withAssetUrl = function (site, url) {
-    return withBaseUrl(site, "assets" + url);
+var asset = function (baseUrl, url) {
+    return base(baseUrl, "assets" + url);
 };
 exports["default"] = {
-    withBaseUrl: withBaseUrl,
-    withAssetUrl: withAssetUrl
+    base: base,
+    asset: asset
 };
