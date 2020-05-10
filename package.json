@@ -2,9 +2,10 @@
   "name": "eleventy-lib",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc **/*.ts --declaration --outDir dist",
+    "test": "npm run build && tape ./dist/**/_test.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   "homepage": "https://github.com/johnteske/eleventy-lib#readme",
   "devDependencies": {
     "prettier": "^2.0.5",
-    "tape": "^5.0.0"
+    "tape": "^5.0.0",
+    "typescript": "^3.8.3"
   }
 }
