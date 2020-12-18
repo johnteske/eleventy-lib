@@ -2,6 +2,8 @@
 exports.__esModule = true;
 var cat_map_1 = require("./cat-map");
 exports.catMap = cat_map_1["default"];
+var email_1 = require("./email");
+exports.email = email_1["default"];
 var maybe_1 = require("./maybe");
 exports.maybe = maybe_1["default"];
 var title_1 = require("./title");
